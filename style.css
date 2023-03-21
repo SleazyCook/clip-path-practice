@@ -349,3 +349,73 @@ footer {
   transform: translateY(0);
   transition-delay: 0.5s;
 }
+
+/* 07 */
+.clip-box-07 {
+  margin: 0;
+  padding: 0;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.card-07 {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: black
+}
+
+.content-07 {
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.h2-07 {
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.p-07 {
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.a-07 {
+  display: inline-block;
+  padding: 10px 10px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+  text-transform: capitalize;
+}
+
+.a-07:hover {
+  color: black;
+  background-color: white;
+}
+
+.img-07 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.img-07:hover {
+  clip-path: polygon(100% 100%, 100% 0, 100% 100%, 0% 100%);
+
+}
