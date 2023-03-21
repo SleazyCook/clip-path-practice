@@ -183,3 +183,39 @@ h2:nth-child(2) {
 .container-03 .clip-03:hover {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
+
+/* 04 */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+
+.clip-box-04 {
+  margin: 0;
+  padding: 0;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: initial;
+}
+
+.card-04 {
+  width: 500px;
+  height: 250px;
+  background-color: #85d9dd;
+  padding: 20px 80px 20px 20px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  clip-path: circle(7% at 93% 20%);
+}
+
+.h1-04 {
+  margin-bottom: 20px;
+}
+
+.p-04 {
+  font-size: 18px;
+}
+
+.card-04:hover {
+  clip-path: circle(70%);
+}
