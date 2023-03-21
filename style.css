@@ -81,7 +81,7 @@ footer {
 
 .clip-box-02 {
   background-color: #2f2f2f;
-  height: 45vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,7 +100,7 @@ footer {
 h2 {
   position: absolute;
   text-align: center;
-  line-height: 500px;
+  /* line-height: 500px; */
   font-size: 170px;
   text-transform: uppercase;
 }
@@ -190,7 +190,7 @@ h2:nth-child(2) {
 .clip-box-04 {
   margin: 0;
   padding: 0;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,4 +218,50 @@ h2:nth-child(2) {
 
 .card-04:hover {
   clip-path: circle(70%);
+}
+
+/* 05 */
+.clip-box-05 {
+  margin: 0;
+  padding: 0;
+  background-color: #c8d6e5;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-05 {
+  position: relative;
+  width: 800px;
+}
+
+.h1-05{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 220px;
+  text-transform: uppercase;
+}
+
+.h1-05:nth-child(2) {
+  color: white;
+  transition: 0.5s;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
+  background-color: #c8d6e5;
+}
+
+.h1-05:nth-child(2):hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+.h1-05:nth-child(1):hover ~ h1 {
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
 }
